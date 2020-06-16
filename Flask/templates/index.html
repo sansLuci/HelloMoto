@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<h1>Templates !</h1>
+{% endblock %}
+
+{% block body %}
+	<div>
+		<form action="http://localhost:5000/value" method = "POST">
+			<input type="radio" name="type" id="incr" value="INCREMENT">
+			<label for="incr">INCREMENT</label><br>
+			<input type="radio" name="gender" id="decr" value="DECREMENT">
+    		<label for="decr">DECREMENT</label><br><br>
+    		<input type="number" name="value" placeholder="5"><br><br>
+			<input type="submit" name="submit">
+		</form>
+	</div>
+{% endblock %}
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+	<div>
+		<form action="http://localhost:5000/login" method = "POST">
+			<label></label>
+			<input type="text" name="type" placeholder="INCREMENT"><br><br>
+			<label></label>
+			<input type="number" name="value" placeholder="5"><br><br>
+			<input type="submit" name="submit">
+		</form>
+	</div>
+</body>
+</html>>
+-->
